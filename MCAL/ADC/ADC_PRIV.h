@@ -1,0 +1,33 @@
+/*
+ * ADC_PRIV.h
+ *
+ *  Created on: Mar 3, 2023
+ *      Author: joseph
+ */
+
+#ifndef ADC_ADC_PRIV_H_
+#define ADC_ADC_PRIV_H_
+
+#define 	ADC_MASK_VREF_CLEAR				0x3F
+#define 	ADC_MASK_CHANNEL_CLEAR			0x0F
+#define 	ADC_MASK_ENABLE_ADC				0x80
+#define 	ADC_MASK_START_CONVERTION		0x40
+#define 	ADC_MASK_ENABLE_AUTO_TRIGGER 	0x20
+
+#define 	ADC_MASK_PRESCALER_CLEAR		0xF8
+#define 	ADC_MASK_PRESCALER_CLK_2		0x00
+#define 	ADC_MASK_PRESCALER_CLK_4		0x02
+#define 	ADC_MASK_PRESCALER_CLK_8		0x03
+#define 	ADC_MASK_PRESCALER_CLK_16		0x04
+#define 	ADC_MASK_PRESCALER_CLK_32		0x05
+#define 	ADC_MASK_PRESCALER_CLK_64		0x06
+#define 	ADC_MASK_PRESCALER_CLK_128		0x07
+
+#define 	ADC_MASK_AUTO_TRIGER_CLEAR	 	0x1F
+
+#define 	ADC_MASK_ENABLE_INTERRUPT		0x08
+
+#define 	ADC_MASK_INTERRUPT_FLAG			0x10
+
+
+#endif /* ADC_ADC_PRIV_H_ */
