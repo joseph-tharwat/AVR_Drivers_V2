@@ -1,0 +1,40 @@
+/*
+ * LCD_PRIV.h
+ *
+ *  Created on: Feb 19, 2023
+ *      Author: joseph
+ */
+
+#ifndef LCD_LCD_PRIV_H_
+#define LCD_LCD_PRIV_H_
+
+#define _4BIT_MODE	0
+#define _8BIT_MODE	1
+
+
+#if LCD_MODE == _4BIT_MODE
+#define LCD_FUNCTION_SET	0b00101100
+#elif  LCD_MODE == _8BIT_MODE
+#define LCD_FUNCTION_SET	0b00111100
+#endif
+
+#define LCD_DISPLAY_ON		0b00001110
+#define LCD_DISPLAY_OFF		0b00001010
+
+#define LCD_CLEAR_DISPLAY	0b00000001
+
+#define LCD_RETURN_HOME		0b00000010
+
+#define LCD_DISPLAY_SHIFT_RIGHT 	0b00011100
+#define LCD_DISPLAY_SHIFT_LEFT 		0b00011000
+
+#define LCD_ENTERY_SET	 		    0b00000110
+
+
+#define LCD_FIRST_CG_RAM_ADDRESS	0x40
+
+#define LCD_FIRST_LINE_ADDRESS		0x80
+#define LCD_SECOND_LINE_ADDRESS		0xc0
+
+
+#endif /* LCD_LCD_PRIV_H_ */
