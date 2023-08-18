@@ -1,8 +1,8 @@
 /*
  * BIT_MATH.h
  *
- *  Created on: Jan 30, 2023
- *      Author: aya_enan
+ *  Created on: Feb 15, 2023
+ *      Author: Joseph Tharwat
  */
 
 #ifndef BIT_MATH_H_
